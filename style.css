@@ -668,7 +668,7 @@ a {
 
 }
 
-@media (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 600px) {
     .cabecera {
         display: flex;
         padding: 1rem;
