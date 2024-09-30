@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
@@ -694,13 +695,13 @@ a {
     .presentacion {
         display: flex;
         flex-direction: column;
-        align-items: normal;
-        padding: 1rem 1rem 1rem 1rem;
+        align-items: flex-start; /* Cambiado de 'normal' a 'flex-start' */
+        padding: 1rem;
     }
 
     .presentacion__foto {
-        width: 98px;
-        height: 98px;
+        width: 25%; /* Cambiado de 98px a 25% para adaptarse mejor */
+        height: auto; /* Altura automática para mantener la proporción */
         padding: 4rem 0rem 0rem 0rem;
     }
 
@@ -720,13 +721,13 @@ a {
         gap: 8px;
         margin: 16px 0px 0px;
     }
+
     .proyectos,
     .formacion,
     .sobre-mi {
         display: flex;
         flex-direction: column;
         padding: 1rem;
-        ;
     }
 
     .sobre-mi__titulo {
@@ -734,8 +735,8 @@ a {
     }
 
     .sobre-mi__texto {
-        width: 400px;
-        height: 208px;
+        width: 100%; /* Ajustado para que ocupe todo el ancho disponible */
+        height: auto; /* Altura ajustable para contenido dinámico */
         font-size: 14px;
     }
 
@@ -749,21 +750,83 @@ a {
         width: 160px;
         height: 118px;
     }
-   .formacion__lista{
-    display: flex;
-    flex-direction: column;
-   }
-   .proyectos__contenedor{
-    width: 400px;
-    height: 270px;
-    margin: 12%;
-   }
-   .proyectos__titulo{
-    font-size: 32px;
-    margin: 0%;
-   }
-   .contacto__formulario{
-    width: 300px;
-    height: 500px;
-   }
+
+    .formacion__lista {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Ajuste de imágenes en el contenedor de proyectos */
+    .proyectos__contenedor {
+        width: 100%; /* Cambiado de 400px a 100% para que se adapte a la pantalla */
+        height: auto; /* Ajustado a la altura del contenido */
+        margin: 12%;
+    }
+
+    .proyectos__contenedor img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: cover; /* Alternativamente, puedes usar 'contain' si quieres ver la imagen completa */
+    }
+
+    .proyectos__titulo {
+        font-size: 32px;
+        margin: 0%;
+    }
+
+    /* Estilos mejorados para el formulario de contacto */
+    .contacto__formulario {
+        width: 100%; /* Cambiado de 300px a 100% */
+        max-width: 400px; /* Limita el ancho en pantallas grandes */
+        height: auto; /* Ajustado a la altura del contenido */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centrar los campos verticalmente */
+        align-items: center; /* Centrar los campos horizontalmente */
+        padding: 1rem;
+        background-color: #f9f9f9; /* Fondo suave para destacar el formulario */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+
+    .contacto__formulario input,
+    .contacto__formulario textarea {
+        width: 100%; /* Asegurar que los campos ocupen todo el ancho disponible */
+        max-width: 350px; /* Limitar el ancho máximo de los campos */
+        margin-bottom: 1rem; /* Añadir separación entre los campos */
+        padding: 0.75rem; /* Aumentar el padding para más espacio interno */
+        font-size: 16px; /* Texto más grande para mejor legibilidad */
+        border: 1px solid #ccc; /* Borde gris claro */
+        border-radius: 8px; /* Bordes redondeados */
+        box-sizing: border-box;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    }
+
+    .contacto__formulario input:focus,
+    .contacto__formulario textarea:focus {
+        border-color: #007BFF; /* Borde azul en foco */
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul suave en foco */
+        outline: none; /* Eliminar el borde por defecto al hacer foco */
+    }
+
+    .contacto__formulario textarea {
+        resize: none; /* Evitar que el textarea se redimensione */
+        height: 120px; /* Altura predeterminada del textarea */
+    }
+
+    /* Estilo del botón */
+    .contacto__formulario button {
+        padding: 0.75rem 1.5rem;
+        font-size: 16px;
+        color: white;
+        background-color: #007BFF; /* Color azul del botón */
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .contacto__formulario button:hover {
+        background-color: #0056b3; /* Color más oscuro en hover */
+    }
 }
