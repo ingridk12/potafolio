@@ -818,7 +818,7 @@ a {
 }
 
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .cabecera {
         
         padding: 1rem;
@@ -828,6 +828,7 @@ a {
 
     .cabecera__logo {
         max-width: 100px;
+        
     }
 
     .cabecera__titulo {
@@ -851,8 +852,13 @@ a {
     }
 
     .presentacion__foto {
-        width: 98px;
-        height: 98px;
+        position: relative;
+        top: 0;
+        left: 50%;
+        border-radius: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 50%;
         padding: 4rem 0rem 0rem 0rem;
     }
 
@@ -883,7 +889,7 @@ a {
         display: flex;
         flex-direction: column;
         padding: 1rem;
-        
+       width: 90%;
     }
 
     .sobre-mi__titulo {
@@ -891,8 +897,8 @@ a {
     }
 
     .sobre-mi__texto {
-        width: 400px;
-        height: 208px;
+        width: 80%;
+        height: 100%;
         font-size: 14px;
     }
 
@@ -905,8 +911,12 @@ a {
 
     .aficiones__elemento,
     .habilidades__elemento {
-        width: 160px;
-        height: 118px;
+        border: 1px solid #007BFF;
+        width: 33%;
+        height: auto;
+    }
+    .formacion__titulo{
+        font-size: 22px;
     }
 
     .formacion__lista {
@@ -916,24 +926,36 @@ a {
     }
 
     .proyectos__contenedor {
-        width: 400px;
-        height: 300px;
-        margin: 12%;
+        width: 70%;
+        height: 70%;
+       margin: 18% 0% 10%;
     }
 
     .proyectos__titulo {
-        font-size: 32px;
+        font-size: 22px;
         margin: 0%;
     }
 
     .proyecto__img {
-        width: 400px;
-        height: 190px;
+        width: 70%;
+        height: 100%;
+
+    }
+    .contacto__titulo{
+        margin-top: 10%;
+        text-align: center;
+    }
+    .proyectos__descripcion{
+        font-size: 12px;
+        font-weight: bold;
+         margin: 10px;
 
     }
 
     .contacto__formulario {
-        width: 300px;
+        position: relative;
+        
+        width: auto;
         height: 500px;
     }
 
