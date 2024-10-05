@@ -3,11 +3,11 @@
 /* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
 */
 :root {
-    --color-de-fondo: #F5F5F5;
-    --color-de-fondo-menu: #ffffff;
+    --color-de-fondo: #F9F7D9;
+    --color-de-fondo-menu: #F6EFA6;
     --color-de-link: #000000;
-    --color-de-fondo2: #EAF2FD;
-    --color-fondo-boton: #0A3871;
+    --color-de-fondo2: #FCE2CE;
+    --color-fondo-boton:#FFC1F3;
 }
 
 body {
@@ -421,7 +421,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: var(--color-de-fondo-menu);
+    color: var(--color-de-link);
     font-size: 16px;
     font-weight: bold;
 }
